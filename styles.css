@@ -8,7 +8,6 @@ body {
     padding-top: 169px;
     padding-left: 132px;
     width: 449px;
-
 }
 
 h1 {
@@ -32,7 +31,6 @@ h1 {
     font-size: 24px;
     color: #FFFFFF;
     max-width: 300px;
-
 }
 
 .button {
@@ -59,8 +57,40 @@ h1 {
 }
 
 @media (max-width:1280px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+
+    .box {
+        margin: 0;
+        padding-left: 64px;
+        padding-top: 64px;
+        width: 1000px;
+    }
+
+    .box-2 {
+        max-width: 900px;
+        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .text-1 {
+        font-size: 24px;
+        max-width: 1000px;
+        align-items: center;
+        padding: auto;
+    }
+
     .galery {
-        grid-template-columns: repeat(2, 8fr);
+        grid-template-columns: repeat(4, 4fr);
         min-width: 400px;
     }
 }
@@ -71,8 +101,30 @@ h1 {
         align-items: center;
     }
 
+    .box {
+        padding-top: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .text-1 {
+        font-size: 24px;
+        max-width: 90%;
+
+    }
+
     .galery {
-        width: 449px;
+        grid-template-columns: repeat(3, 5fr);
+        max-width: 100%;
         min-width: 200px;
         padding: 0;
         margin: 40px;
@@ -83,4 +135,94 @@ h1 {
         align-items: center;
     }
 
+}
+
+@media (max-width: 640px) {
+    .box {
+        padding-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .box-2 {
+        grid-template-columns: repeat(1, 3fr);
+    }
+
+    h1 {
+        font-size: 48px;
+
+    }
+
+    .text-1 {
+        font-size: 22px;
+        max-width: 100%;
+
+    }
+
+    .galery {
+        grid-template-columns: repeat(2, 8fr);
+        margin: 30px;
+        max-width: 100%;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    h1 {
+        font-size: 45px;
+
+    }
+
+    .text-1 {
+        font-size: 20px;
+        max-width: 100%;
+
+    }
+
+    .galery {
+        display: flex;
+        flex-direction: column;
+        max-width: 380px;
+    }
+
+    .img {
+        border-radius: 40px;
+        min-width: 300px;
+        max-width: 380px;
+    }
+
+    .button {
+        width: 280px;
+        height: 60px;
+        margin: 10px 30px;
+        border-radius: 36px;
+        color: #232323;
+        border: none;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    h1 {
+        font-size: 40px;
+
+    }
+
+    .text-1 {
+        font-size: 19px;
+        max-width: 100%;
+
+    }
+
+    .galery {
+        max-width: 310px;
+    }
+
+    .img {
+        border-radius: 40px;
+        width: 280px;
+        min-width: 172px;
+    }
 }
