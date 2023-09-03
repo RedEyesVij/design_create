@@ -68,11 +68,19 @@ h1 {
 @media (max-width: 1000px) {
     body {
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
 
     .galery {
         width: 449px;
         min-width: 200px;
+        padding: 0;
+        margin: 40px;
     }
+
+    .button {
+        margin: 20px 60px;
+        align-items: center;
+    }
+
 }
