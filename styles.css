@@ -73,6 +73,9 @@ h1 {
         padding-left: 64px;
         padding-top: 64px;
         width: 1000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .box-2 {
@@ -87,6 +90,11 @@ h1 {
         max-width: 1000px;
         align-items: center;
         padding: auto;
+    }
+
+    .button {
+        display: block;
+        align-items: center;
     }
 
     .galery {
@@ -106,9 +114,6 @@ h1 {
         padding-left: 20px;
         padding-right: 20px;
         width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     h1 {
