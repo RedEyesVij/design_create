@@ -1,4 +1,9 @@
 body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
     display: flex;
     background-color: #2F2F2F;
     font-family: "Poppins", sans-serif;
@@ -70,8 +75,7 @@ h1 {
 
     .box {
         margin: 0;
-        padding-left: 64px;
-        padding-top: 64px;
+        padding: 0;
         width: 1000px;
         display: flex;
         flex-direction: column;
@@ -86,10 +90,10 @@ h1 {
     }
 
     .text-1 {
+        display: block;
         font-size: 24px;
         max-width: 1000px;
-        align-items: center;
-        padding: auto;
+        text-align: center;
     }
 
     .button {
@@ -123,12 +127,12 @@ h1 {
 
     .text-1 {
         font-size: 24px;
-        max-width: 90%;
+        align-items: center;
 
     }
 
     .galery {
-        grid-template-columns: repeat(3, 5fr);
+
         max-width: 100%;
         min-width: 200px;
         padding: 0;
@@ -150,22 +154,24 @@ h1 {
     }
 
     .box-2 {
-        grid-template-columns: repeat(1, 3fr);
+        max-width: 100%;
+        gap: 5px;
+
     }
 
     h1 {
-        font-size: 48px;
+        font-size: 40px;
 
     }
 
     .text-1 {
+        display: inline-block;
         font-size: 22px;
         max-width: 100%;
-
     }
 
     .galery {
-        grid-template-columns: repeat(2, 8fr);
+        grid-template-columns: repeat(3, 5fr);
         margin: 30px;
         max-width: 100%;
     }
@@ -175,7 +181,7 @@ h1 {
 @media (max-width: 460px) {
 
     h1 {
-        font-size: 45px;
+        font-size: 30px;
 
     }
 
@@ -211,12 +217,12 @@ h1 {
 @media (max-width: 320px) {
 
     h1 {
-        font-size: 40px;
+        font-size: 22px;
 
     }
 
     .text-1 {
-        font-size: 19px;
+        font-size: 14px;
         max-width: 100%;
 
     }
