@@ -45,6 +45,7 @@ h1 {
     color: #232323;
     border: none;
     font-size: 24px;
+    cursor: pointer;
 }
 
 .galery {
@@ -59,6 +60,11 @@ h1 {
 .img {
     border-radius: 40px;
     width: 100%;
+    cursor: pointer;
+}
+
+.img:hover {
+    box-shadow: 0px 5px 5px #00000033;
 }
 
 @media (max-width:1280px) {
@@ -201,6 +207,7 @@ h1 {
         border-radius: 40px;
         min-width: 300px;
         max-width: 380px;
+        cursor: pointer;
     }
 
     .button {
@@ -211,6 +218,7 @@ h1 {
         color: #232323;
         border: none;
         font-size: 24px;
+        cursor: auto;
     }
 }
 
